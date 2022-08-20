@@ -1,4 +1,4 @@
-import throttle from 'lodash.throttle';
+// import throttle from 'lodash.throttle';
 
 const STORAGE_KEY = 'feedback-form-state';
 
@@ -14,14 +14,14 @@ function onFormSubmit(e) {
   /*Для Вывода обьекта в консоль */
   const formData = new FormData(form);
   const userData = {};
-  formData.forEach((value, name) => userData[name] = value);
+  formData.forEach((value, name) => (userData[name] = value));
   console.log(userData);
   /*Проверка на заполнение всех полей */
   const { email, message } = e.target.elements;
-  if (email.value === "" || message.value === "") {
-   return
+  if (email.value === '' || message.value === '') {
+    return;
   }
-   e.currentTarget.reset();
+  e.currentTarget.reset();
   localStorage.removeItem(STORAGE_KEY);
 }
 function onFormInput(e) {
