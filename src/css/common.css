@@ -8,7 +8,8 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #e7cfcf;
+  background: rgba(177, 255, 181, 0.76) none no-repeat scroll 0px 2px;
+  /* background-color: #e7cfcf; */
   /* color: #212121; */
   /* line-height: 1.5; */
 }
@@ -32,8 +33,12 @@ flex-direction: row;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background-color: rgb(98, 169, 235);
+  background: #BDCE98;
+    background: -moz-linear-gradient(left, #BDCE98 0%, #4040A9 67%, #64C581 100%);
+    background: -webkit-linear-gradient(left, #BDCE98 0%, #4040A9 67%, #64C581 100%);
+    background: linear-gradient(to right, #BDCE98 0%, #4040A9 67%, #64C581 100%);
+/* 
+  background-color: rgb(98, 169, 235); */
 }
 
 .input{
@@ -57,8 +62,8 @@ background-color: rgb(59, 60, 61);
     display: flex;
     flex-direction: column;
     align-content: space-around;
-      box-shadow: -webkit-box-shadow: 0px 3px 35px 7px #1F78CC;
-        box-shadow: 0px 3px 35px 7px #1F78CC;
+      box-shadow: -webkit-box-shadow: 0px 0px 35px 0px #1F78CC;
+        box-shadow: 0px 0px 35px 0px #1F78CC;
       border-radius: 12px;
 }
 
