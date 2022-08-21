@@ -14,9 +14,10 @@ const refs = {
 
 refs.form.addEventListener('submit', onFormSubmit);
 refs.buttonLoad.addEventListener('click', onLoadMoreBtn);
-refs.buttonLoad.classList.add('ishidden');
+
 let currentPage = 1;
 let searchName = '';
+refs.buttonLoad.classList.add('ishidden');
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionPosition: 'bottom',
@@ -125,12 +126,4 @@ function createMarkup(img) {
 
 function clearGalleryList() {
   refs.gallery.innerHTML = '';
-}
-
-function smoothScrollToBottomPage() {
-  const galleryRect = refs.gallery.getBoundingClientRect();
-  window.scrollBy({
-    top: galleryRect.height,
-    behavior: 'smooth',
-  });
 }
