@@ -4,30 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 8</title>
+    <title>H.W-11</title>
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/01-gallery.css" />
   </head>
   <body>
-    <ul>
-      <li><a href="01-gallery.html">Image gallery</a></li>
-      <li><a href="02-video.html">Video playback</a></li>
-      <li><a href="03-feedback.html">Feedback form</a></li>
-    </ul>
+    <div>
+      <form class="search-form" id="search-form">
+        <input
+          class="input"
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+        <button type="submit" class="input__btn">Search</button>
+      </form>
+    </div>
 
-    <iframe
-      id="vimeo-player"
-      src="https://player.vimeo.com/video/236203659"
-      width="640"
-      height="360"
-      frameborder="0"
-      allowfullscreen
-      allow="autoplay; encrypted-media"
-    ></iframe>
+    <div class="gallery">
+      <!-- Карточки изображений -->
+    </div>
 
-    <div class="gallery"></div>
+    <button type="button" class="load-more">Load more</button>
 
     <script src="js/01-gallery.js" type="module"></script>
-
-    <script src="js/02-video.js" type="module"></script>
   </body>
 </html>
